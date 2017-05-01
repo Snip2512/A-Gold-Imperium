@@ -21,7 +21,8 @@ public static class Main{
 
     public static void GameLoop() {
 
-        ListMaster.DisplayAllProvince();
+        //ListMaster.DisplayAllProvince();
+        ListMaster.DisplayWorldPop();
         ListMaster.CheckForJobs();
 
     }

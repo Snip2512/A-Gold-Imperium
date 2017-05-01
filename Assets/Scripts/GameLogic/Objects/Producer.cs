@@ -35,7 +35,10 @@ public class Producer  {
 
     public void AddNewEmployees(int i) {
         employees.AddPopulation(i);
+    }
 
+    public int GetEmployeeCount() {
+       return employees.GetPopulation();
     }
 
 

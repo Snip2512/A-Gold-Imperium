@@ -22,11 +22,24 @@ public static class ListMaster {
     }
 
     public static void DisplayAllProvince() {
+        //debug Method
         foreach (KeyValuePair<string, Province> prov in provinces) {           
-            Debug.Log("Name: " + prov.Value.GetName() + " Unemployed: " + prov.Value.getUnemployedPop());
-            
+            Debug.Log("Name: " + prov.Value.GetName() + " Unemployed: " + prov.Value.getUnemployedPop());            
         }
     }
+
+    public static void DisplayWorldPop() {
+        //debug method
+        int pop = 0;
+        foreach (KeyValuePair<string, Province> prov in provinces) {
+            pop = pop + prov.Value.getUnemployedPop();
+            List<Producer> producers = prov.Value.GetProducers();
+            foreach (Producer p in producers) {
+                pop = pop + p.GetEmployeeCount();
+                }
+            }
+        Debug.Log("World Pop is: " + pop);
+        }
 
     public static void AddProvID(string hex, string ID) {
         provID.Add(hex, ID);
