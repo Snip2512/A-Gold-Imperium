@@ -33,6 +33,15 @@ public class Province {
         unemployed = new PopGroup(pop, gro);
     }
 
+    public int getUnemployedPop() {
+        int i = unemployed.GetPopulation();
+        return i;
+    }
+
+    public void SetUnemployedPop(int i) {
+        unemployed.SetPopulation(i);
+    }
+
     public string GetName() {
         return name;
     }
@@ -49,4 +58,6 @@ public class Province {
     public List<Producer> GetProducers() {
         return producers;
     }
+
+
 }

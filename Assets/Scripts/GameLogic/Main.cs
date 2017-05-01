@@ -22,7 +22,7 @@ public static class Main{
     public static void GameLoop() {
 
         ListMaster.DisplayAllProvince();
-
+        ListMaster.CheckForJobs();
 
     }
 

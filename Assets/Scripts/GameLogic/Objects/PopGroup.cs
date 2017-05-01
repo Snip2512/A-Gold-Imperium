@@ -6,9 +6,9 @@ public class PopGroup  {
 
     private int population;
     private string group;
-    private int income;
+    private float income;
     private int cornNeed;
-
+    private float capital;
 
 
     public PopGroup(int pop, string product) {
@@ -31,6 +31,14 @@ public class PopGroup  {
 
     public int GetPopulation() {
         return population;
+    }
+
+    public void AddPopulation(int i) {
+        population = population + i;
+    }
+
+    public void SetPopulation(int i) {
+        population = i;
     }
 
 }
