@@ -36,7 +36,7 @@ public class ProvinceGenerator : MonoBehaviour {
             for (int ii = 0; ii < xCount; ii++) {
 
                 for (int z = 0; z < stringChars.Length; z++) {
-                    //generate a random 3 letter string for provID. This'll crash if it happens to generate a duplicate.
+                    //generate a random 3 letter string for provID. This'll crash if it happens to generate a duplicate. Pretty unlikely though
                     stringChars[z] = chars[random.Next(chars.Length)];
                     
                 }
@@ -51,9 +51,9 @@ public class ProvinceGenerator : MonoBehaviour {
                         products[val] = "timber";
                     }
                 }
-
+                int popVal = random.Next(500, 10000);
                 writeFile.WriteLine("Hex (" + i + "," + ii + ");" + provID);
-                writeFile2.WriteLine(provID +";"+ provID + ";" + products[0] + ";" + products[1] + ";" + products[2] + ";" + 0);
+                writeFile2.WriteLine(provID +";"+ provID + ";" + products[0] + ";" + products[1] + ";" + products[2] + ";" + popVal);
             }
         }
         writeFile.Close();
