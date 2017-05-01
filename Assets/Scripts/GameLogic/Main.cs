@@ -5,7 +5,7 @@ using UnityEngine;
  * Then contains the main game logic loop i guess. 
  * Main loop will be what actions to perform each day, unity will call this when appropriate
  */
-
+ //Test username
 
 public static class Main{
 
