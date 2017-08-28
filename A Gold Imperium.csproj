@@ -86,7 +86,7 @@
     <Compile Include="Assets\Scripts\GameLogic\ReadInData.cs" />
     <Compile Include="Assets\Scripts\GameLogic\TradeManager.cs" />
     <Compile Include="Assets\Scripts\HexGrid Logic\GridGenerator.cs" />
-    <Compile Include="Assets\Scripts\UI\TextTest.cs" />
+    <Compile Include="Assets\Scripts\UI\UIStats.cs" />
     <Compile Include="Assets\Scripts\UI\UserInputTracker.cs" />
     <Compile Include="Assets\Scripts\UnityMain.cs" />
   </ItemGroup>
